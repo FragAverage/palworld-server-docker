@@ -8,6 +8,8 @@ WORKDIR /palworld
 
 COPY startup.sh /startup.sh
 
+RUN chmod +x /startup.sh
+
 VOLUME [ "/palworld" ]
 
 ENTRYPOINT [ "/startup.sh" ]
