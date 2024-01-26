@@ -6,6 +6,8 @@ install_or_update() {
 
 start_server() {
   install_or_update 
+
+  echo "Running on port: $PORT"
 }
 
 start_server
