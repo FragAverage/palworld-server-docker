@@ -27,11 +27,6 @@ jobs:
           # generate Docker tags based on the following events/attributes
           tags: |
             latest
-            ${{ github.sha }}
-            ${{ github.ref }}
-            ${{ github.repository }}:latest
-            ${{ github.repository }}:${{ github.sha }}
-            ${{ github.repository }}:${{ github.ref }}
           # always generate latest tag on push
           flavor: |
             latest=true
