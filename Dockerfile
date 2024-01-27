@@ -6,16 +6,16 @@ WORKDIR /home/steam/steamcmd
 
 RUN mkdir -p /home/steam/palworld/Pal/Saved
 
-COPY startup.sh /home/steam/steamcmd/startup.sh
+COPY startup.sh /home/steam/palworld/startup.sh
 
 USER root
 
-RUN chmod +x /home/steam/steamcmd/startup.sh
+RUN chmod +x /home/steam/palworld/startup.sh
 
 USER steam
 
 EXPOSE 8211/udp
 
-VOLUME [ "/home/steam/steamcmd/" ]
+VOLUME [ "/home/steam/palworld/" ]
 
-ENTRYPOINT [ "/home/steam/steamcmd/startup.sh" ]
+ENTRYPOINT [ "/home/steam/palworld/startup.sh" ]
