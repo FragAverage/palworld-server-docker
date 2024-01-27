@@ -7,14 +7,21 @@ install_or_update() {
 start_server() {
   install_or_update 
 
-  ARGS=" EpicApp=PalServer -useperfthreads -NoAsyncLoadThread -UseMultitheadForDS"
+  ARGS="EpicApp=PalServer -useperfthreads -NoAsyncLoadThread -UseMultitheadForDS"
 
 
 
-  echo "Starting on port: $PORT"
+  echo "Printing ls (workdir)"
+  ls
+
+  echo "Printing ls /home/steam"
+  ls /home/steam
+
+  echo "Printing ls /home/steam/palworld"
+  ls /home/steam/palword
   
-  cd /home/steam/palworld
-  ./PalServer.sh "$ARGS"
+  # cd /home/steam/palworld
+  # ./PalServer.sh "$ARGS"
 
 }
 
