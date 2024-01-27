@@ -28,7 +28,8 @@ start_server() {
 
 term_handler() {
 	kill -SIGTERM $(pidof PalServer-Linux-Test)
-	tail --pid=$(pidof PalServer-Linux-Test) -f 2>/dev/null
+	# tail --pid=$(pidof PalServer-Linux-Test) -f 2>/dev/null
+  tail -f /dev/null
 	exit 143;
 }
 
