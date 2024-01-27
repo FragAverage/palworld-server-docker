@@ -5,9 +5,9 @@ install_or_update() {
 }
 
 start_server() {
-  install_or_update 
+  # install_or_update 
 
-  ARGS="EpicApp=PalServer -useperfthreads -NoAsyncLoadThread -UseMultitheadForDS"
+  # ARGS="EpicApp=PalServer -useperfthreads -NoAsyncLoadThread -UseMultitheadForDS"
 
 
 
