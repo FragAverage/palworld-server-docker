@@ -10,6 +10,7 @@ COPY startup.sh /home/steam/palworld/startup.sh
 
 USER root
 
+RUN chown steam:steam /home/steam/palworld/startup.sh
 RUN chmod +x /home/steam/palworld/startup.sh
 
 USER steam
