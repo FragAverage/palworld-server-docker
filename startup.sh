@@ -18,7 +18,7 @@ start_server() {
   ls /home/steam
 
   echo "Printing ls /home/steam/palworld"
-  ls /home/steam/palword
+  ls /home/steam/palworld
   
   # cd /home/steam/palworld
   # ./PalServer.sh "$ARGS"
