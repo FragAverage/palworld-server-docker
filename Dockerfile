@@ -17,6 +17,6 @@ USER steam
 
 EXPOSE 8211/udp
 
-VOLUME [ "/" ]
+VOLUME [ "/home/steam/palworld/Pal/Saved" ]
 
 ENTRYPOINT [ "/home/steam/palworld/startup.sh" ]
